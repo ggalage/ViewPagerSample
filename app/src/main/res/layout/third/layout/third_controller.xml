@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/third_controller_error"/>
+    <include layout="@layout/third_controller_loading"/>
+
+    <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipetoload_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.viewpagersample.sei.viewpagersample.utils.SwipeToLoadRefreshHeaderView
+            android:id="@+id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        </com.viewpagersample.sei.viewpagersample.utils.SwipeToLoadRefreshHeaderView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+</FrameLayout>
